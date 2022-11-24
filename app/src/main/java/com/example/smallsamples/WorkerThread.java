@@ -10,7 +10,7 @@ public class WorkerThread extends HandlerThread {
     public WorkerThread() {
         super(TAG);
         start();
-        handler = new Handler();
+        handler = new Handler(getLooper());
 
     }
 
